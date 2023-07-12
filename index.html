@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Everycoinprice</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/easy-autocomplete/1.3.5/easy-autocomplete.min.css" type="text/css"/>
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Everycoinprice</a>
+          <div class="d-flex" role="search">
+            <button class="btn btn-sm btn-light me-1 border"  data-bs-toggle="modal" data-bs-target="#searchModal">🔍</button>
+            <!-- Place this tag where you want the button to render. -->
+            <div class="mt-2">
+              <a class="github-button" href="https://github.com/everycoinprice29/everycoinprice29.github.io" data-color-scheme="no-preference: light_high_contrast; light: light; dark: dark;" data-size="large" aria-label="Star everycoinprice29/everycoinprice29.github.io on GitHub" >Star</a>
+            </div>
+
+          </div>
+        </div>
+      </nav>
+      <!--cards-->
+      <div class="row row-cols-1 row-cols-md-3 g-4 pl-4 pr-4" id="cardGroup">
+        <!-- <div class="col text-center">
+            <div class="card h-100 " style="background-color: red; color: white;">
+                <div class="card-body">
+                    <h3>Bitcoin</h3>
+                    <h5 id="content"><div class="spinner-border" role="status"></div></h5>
+                </div>
+            </div>
+        </div> -->
+        
+      </div>
+      <!--modal-->
+      <!-- Modal -->
+      <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="searchModalLabel">Search coin</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" style="min-width: 300px;">
+              <input type="text" class="form-control" placeholder="Enter coin name.." id="autocomplete" style="width: auto;">
+              <div id="cResults">
+                <div class="card text-bg-primary text-center mx-auto m-4 mb-3" style="max-width: 18rem;">
+                  <div class="card-body">
+                    <h5 class="card-title" id="cTitle">Bitcoin</h5>
+                    <p class="card-text" id="cPrice">$30,000</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--github-->
+      <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+      <!--load btn-->
+      <div class="container p-4 m-4 btn-lg  border"><button class="btn btn-light"  id="loadMore">Load more...</button></div>
+      <!--scripts-->
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/ccxt@4.0.4/dist/ccxt.browser.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-autocomplete/1.3.5/jquery.easy-autocomplete.min.js"></script>
+      <script src="js/index.js"></script>
+    <!-- Place this tag in your head or just before your close body tag. -->
+  </body>
+</html>
