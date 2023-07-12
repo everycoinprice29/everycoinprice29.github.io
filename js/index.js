@@ -139,6 +139,7 @@ document.addEventListener ("DOMContentLoaded", function () {
     //modal clos
     $("#searchModal").on("hidden.bs.modal", function () {
         // put your default event here
+        $("#autocomplete").val("");
         $("#cResults").hide();
     });
 
